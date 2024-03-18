@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #box1 { background-color: tomato;}
+        #box2 { background-color: gold;}
+        #box3 { background-color: cornflowerblue;}
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border : 10px solid black;
+        }
+
+
+        #box1{
+                margin-bottom: 30px;
+        }
+        #box2{
+
+            margin-top: 30px;
+            /* padding: 20px; */
+           /*  margin: 20px; */
+            
+           /* margin-top: 30px;
+           margin-bottom: 30px;
+
+           padding-top: 30px; */
+
+           /* margin: 30px 0px 50px 10px; */
+            /* margin : 30px 0px 50px; */
+            /* margin: 30px 0px; */
+            /* margin:30px */
+        }
+
+        /* width, height >  우리가 실제로 보는 박스 크기는  컨첸츠의 크기.. */
+
+        html{
+            /* border : 10px solid red;
+            padding : 0; */
+        }
+        body{
+            /* border : 5px solid blue; */
+            margin:0;
+            /* margin-bottom: 300px; */
+            padding-bottom: 300px;
+        }
+
+        #txt-search {
+            outline:none;
+            border : 1px solid #4f4f4f;
+            padding : 4px;
+        }
+
+        h2{
+          margin-bottom: 0px;  
+          margin-left: 100px;
+          padding-left: -100px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+
+      <h1>CSS 박스 모델</h1>
+
+      <div id="box1" class="box">상자1</div>
+      <div id="box2" class="box">상자2</div>
+      <div id="box3" class="box">상자3</div>
+
+    <h2>검색</h2>
+    <input type="text" id = "txt-search" placeholder="검색어를 입력하세요">
+
+</body>
+</html>

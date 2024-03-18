@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		
+	<form>, 폼
+	사용자가 입력한 데이터를 서버로 보내는 행위가 폼
+	
+ 	클라이언트 브라우저가 받을 데이터를 처리할 프로그램을 만들어야 함. 
+ 	
+	HTML Form + HTML Input Control
+	- 입력 양식
+	- 클라이언트(사용자)로부터 입력장치(키보드,마우스 등)을 통해서 데이터를 입력받는 역할 + 서버로 전송하는 역할
+	- ex) 텍스트박스, 라디오버튼, 체크박스, 셀렉트 박스 등.
+	
+	<form>태그
+	- 스스로 랜더링 결과를 만들지 않는다.(화면에 안보임)
+	
+	
+	
+	 -->
+	
+	<h1>폼</h1> 
+	 <form>
+	 	<input type = "text">
+	 	<input type ="submit" value = "전송">
+	 </form>
+	 
+	 
+	 
+	 
+	 
+</body>
+</html>

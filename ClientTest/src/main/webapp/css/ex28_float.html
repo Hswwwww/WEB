@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*  블럭 > 인 으로 바꿀떄 float 사용  */
+    
+        .box{
+            border:1px solid black;
+            width: 150px;
+            height: 150px;
+            /* display:inline-block; */
+            float : left;
+
+        }
+        #box1{background-color: red;}
+        #box2{background-color: orange;}
+        #box3{background-color: yellow;}
+        #box4{background-color: green;}
+        #box5{background-color: blue;}
+    </style>
+<body>
+    
+    <!-- div#box$.box{상자$}*5 -->
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+    <div id="box4" class="box">상자4</div>
+    <div id="box5" class="box">상자5</div>
+
+    <div style ="clear: left;">추가상자</div>
+
+<!-- float를 통해 한줄 배치를 했는데 그 다음 요소가 말려올려와서 빈공간을 채우는 성질을없애는 기능 style ="clear: left; -->
+
+</body>
+</html>

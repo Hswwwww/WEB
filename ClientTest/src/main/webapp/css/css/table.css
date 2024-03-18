@@ -1,0 +1,25 @@
+/* webapp > css > css > table.css */
+/* ctrl+h : 글 바꿔줌 */
+
+
+
+.table{
+    border: 1px solid #555;
+    border-collapse: collapse;
+    
+}
+
+.table th, .table td{
+    border:1px solid red;
+    padding: 3px;    
+}
+
+
+
+.table th {
+    background-color: #EFEFEF;
+}
+
+.table tr:hover{
+    background-color: orange;
+}

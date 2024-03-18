@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgcolor = "#fffff0">
+	
+<!--  
+		
+		<body> 태그
+		- 모든 출력 내용을 관리하는 컨테이너
+		
+		<body> 속성
+		1. bgcolor
+			- 문서 배경색
+		2. background
+			- 문서 배경 이미지
+		
+		HTML의 색상 표현법 (*****)
+		1. 색상명
+			- Named Color
+			- Well-known Color
+			- 미리 약속된 몇가지 색상명을 사용(140여가지)
+			- Web Color name
+			- 
+		2. RGB 
+		
+		-->
+		
+		
+
+</body>
+</html>

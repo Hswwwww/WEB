@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /* 
+        박스 모델, Box Model
+        - HTML의 모든 태그는 화면에 출력될 때 직사각형 형태로 출력된다.
+            > 이 규칙을 기반으로 적용되는 CSS의 규칙과 속성을 박스 모델이라고 한다.
+
+
+        1. 테두리, border
+        - 모든 태그는 자신의 영역을 가진다 > 영역이 보이는 경우 / 안보이는 경우
+            > border 적용 > 영역 가시화 > 테두리 출력
+
+        
+
+
+
+
+
+
+    */
+    /* alt+ shitf + a */
+   
+    #box2{
+        border-color: black; /* 테두리 색 */
+        border-width: 5px; /* 테두리 두께 */
+        border-style: inset; /* 테두리 타입 */
+    }
+
+    #box3{
+        border :5px solid blue
+    }
+
+    #box1{
+
+        border-top: 10px solid pink;
+        /* border-top-color: red;
+        border-top-style: solid;
+        border-top-width: 10px; */
+
+        border-right-color: blue;
+        border-right-style: solid;
+        border-right-width: 5px;
+        
+        border-bottom-color: green;
+        border-bottom-style: dotted;
+        border-bottom-width: 20px;
+
+        border-left-color: orange;
+        border-left-style: double;
+        border-left-width: 3px;
+        
+    }
+
+    #txt2{
+        background-color: yellow;
+        border : 1px solid #4f4f4f
+    }
+
+    body {
+            background: yellow;
+            border: 10px solid black
+    }
+
+    html{
+        border:10px solid blue;
+    }
+
+    
+
+    </style>
+</head>
+<body onclick = "alert('나는 바디');">
+    
+    <h1>CSS 박스 모델</h1>
+
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+
+    <h2>텍스트 박스</h2>
+    <input type="text" id="txt1">
+    <input type="text" id="txt2">
+    
+    <h2>이미지</h2>
+    
+    <img src="images/catty01.png" style="border : 1px solid blue">
+
+    
+</body>
+</html>

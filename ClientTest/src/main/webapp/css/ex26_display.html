@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+        
+            display 속성
+            - 요소를 화면에 출력되는 방식 조작
+            1. none
+            2. block
+            3. inline
+            4. inline-block
+            
+        */
+
+        body:hover .box {
+            display:inline-block;
+        }
+
+        .box{
+            border:1px solid black;
+            display: none;
+            width:100px;
+            height:100px;
+        }
+    /* inline-block 한줄로 출력인데 크기 조절하고 싶을떄  */
+
+        .link{
+            border: 1px solid black;
+            display: block;
+            width:100px;
+            height:100px;
+        }
+
+        #menu {
+            /* border: 1px solid red; */
+            padding-left: 0;
+            text-align: center;
+
+        }
+
+        #menu > li {
+            /* border:1px solid blue; */
+            display: inline;
+            
+        }
+
+        #cat > img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 활용도가 높은 아이!!! ex26_display.html-->
+<!-- 블럭 > 인 -->
+    <ul id = "menu"> 
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+    </ul>
+
+    <h1>블럭태그</h1>
+    <div id="box1" class = "box">상자1</div>
+    <div id="box2" class = "box">상자2</div>
+    <div id="box3" class = "box">상자3</div>
+
+    <h1>인라인태그</h1>
+    <a href="#!" id ="link1" class ="link">링크1</a>
+    <a href="#!" id ="link2" class ="link">링크2</a>
+    <a href="#!" id ="link3" class ="link">링크3</a>
+
+
+ <!-- 인 > 블럭
+    img 클래스 주기 어려울때 그냥 부모 태그 이용함 -->
+ <div id = cat>
+    <h1>고양이</h1>
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    <img src="images/catty01.png">
+    </div>
+
+</body>
+</html>

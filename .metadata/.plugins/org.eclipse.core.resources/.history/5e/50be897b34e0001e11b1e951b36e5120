@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--
+
+	HTML 언어 구성 요소
+	
+	1. 태그(Tag) / 요소 (Element)
+	2. 속성(Attribute)
+	3. 텍스트(PCDATA)
+	-----------------------------------
+	4. 주석(Comment)
+	-----------------------------------
+	5. 선언문(Declaration)
+	6. 엔티티(Entity)
+	7. 외부 요소
+	8. 등등...
+	
+	1. 태그(Tag) / 요소 (Element)
+	- 명령어를 <>로 묶어놓은 요소
+	- HTML 문법의 주요 요소
+	- HTML 문서의 골격(뼈대)을 만드는 역할(레이아웃을 잡는 역할)
+	- 데이터(문자열,이미지 등)을 출력하는 역할
+	- 각 태그마다 역할 부여 > 출력되는 형태 or 기능이 다르다.
+	-  	
+	
+  -->
+	<h1> 제목입니다.</h1>
+	<p>내용입니다.</p>
+	
+</body>
+</html>

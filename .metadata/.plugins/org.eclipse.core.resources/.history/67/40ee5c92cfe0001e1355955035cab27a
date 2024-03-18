@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+	
+		<p> paragraph
+		- 문단 태그
+		- 텍스트 집합
+		- 쌍태그
+		- 혼합형
+		
+		p.align
+		- horizontal alignment
+		- left|center|right|justify
+		
+	 -->
+	 
+	 
+	 <font>홍길동</font>
+	 <font>아무개</font>
+	 <font>하하하</font>
+	 
+	 <p>홍길동</p> <!--빈 줄을 넣어둠 -->
+	 <p>아무개</p>
+	 <p>하하하</p>
+	 
+	 
+</body>
+</html>

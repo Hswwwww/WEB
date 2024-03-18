@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		
+		링크, Link
+		- <a>, anchor
+		- 쌍태그, 혼합형
+		1. Link
+		2. Anchor
+	
+		a.href
+		- 이동할 URL
+		
+	 -->
+	 
+	 <h1>링크</h1>
+	 
+	 <a href="https://naver.com">네이버(외부링크)</a>
+	 <br>
+	 <a href ="ex11_list.html">11번 예제(내부링크)</a>
+	 <br>
+	 <a href ="images/dog.jpg">이미지</a>
+	 <br>
+	 <a href = "테스트.txt"> 텍스트파일</a>
+	 <br>
+	 <a href = "html.zip"> 압축파일</a> <!--다운로드 해줌 -->
+	 <br>
+	 <a href = "https://spring.io"> 스프링</a>
+	 <br>
+	 
+	 <hr>
+	 
+	 <!-- 
+	 
+	 	a.target
+	 		- 열거형
+	 	1. _blank
+	 	2. _self(dafult)
+	 	3. _parent
+	 	4. -top
+	 	3. 프레임명
+	 	
+	 	
+	  -->
+	 
+	 <a href = "https://google.com" target="_self">구글</a>
+	 <a href = "https://google.com" target="_blank">구글</a>
+</body>
+</html>

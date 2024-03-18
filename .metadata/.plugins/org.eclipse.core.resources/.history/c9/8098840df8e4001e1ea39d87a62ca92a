@@ -1,0 +1,27 @@
+package String;
+
+import java.util.Scanner;
+
+public class ex08 {
+
+	 public static String solution(String str){
+		 String answer = "NO";
+		 
+		 String s = new StringBuilder().reverse().toString();
+		 
+		 if(s.equals(str)) {
+			return  answer="YES";
+		 }else return answer;
+		 
+	 }
+	 
+	
+
+public static void main(String[] args) {
+	
+	
+    Scanner sc = new Scanner(System.in);
+    String str = sc.nextLine();
+    System.out.println(solution(str));
+}
+}

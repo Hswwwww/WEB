@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>클라이언트 언어</h1>
+	<h2>HTML</h2>
+	
+	<font color = "blue">장점:</font> <p> 무료로 사용이 가능하며 문법이 쉽다. 마크업 언어로 클라이언트-서버 간의 빠른 정보 전달이 가능하다. 시스템과 운영체제에 독립적이다.<p>
+	<font color = "Red">단점: 정적언어로 동적 출력 생성이 불가능하다. 구조화된 정보의 표현과 검색이 어렵다. 제공하는 보안기능이 제한되어 있다. </font>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<form method = "post" action = "ex18.jsp">
+	
+		이름 : <input type = "text">
+		
+		<hr>
+		
+		<label>이름 : <input type = "text"></label>
+		
+		<hr>
+		
+		<input type = "text" value = "입력을 입력하세요"
+		onfocus = "this.value = '';">
+		
+		
+		<hr>
+		
+		<input type = "submit" value = "보내기">
+	
+	</form>
+	
+	
+</body>
+</html>

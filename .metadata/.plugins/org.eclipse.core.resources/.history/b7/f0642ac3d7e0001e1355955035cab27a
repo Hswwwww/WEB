@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>물리적인 모양을 강조하는 태그</h1>
+	일반 텍스트입니다.<br>
+	<b>볼드체입니다.</b><br>
+	<i>이탤릭체입니다.</i><br>
+	<u>밑줄을 긋습니다.</u><br><!-- underline  -->
+	<strike>취소선을 긋습니다.</strike><br>
+	H<sub>2</sub>O<br><!-- 밑첨자  -->
+	Mc<sup>2</sup><!--윗첨자 --><br>
+	<big>큰 글자</big><br>
+	<small>작은 글자</small><br>
+	<tt>타자기 글자</tt>
+	
+	
+	
+	<h1>의미를 강조하는 태그</h1>
+	<!--먼 미래를 만들어진 애들... ㅎ -->
+	
+	<Strong>중요한 데이터입니다.</Strong><br>
+	<em>중요한 데이터입니다.</em><br>
+	<mark>강조할 때 사용</mark>
+	
+</body>
+</html>

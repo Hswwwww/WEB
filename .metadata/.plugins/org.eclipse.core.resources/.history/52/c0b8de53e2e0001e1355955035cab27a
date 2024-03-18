@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1><font color = "005A9C">HTML5 Reference</font></h1>
+	<h2>W3C Editor’s Draft 9 August 2010</h2>
+	
+	<b>This version:</b><br>
+	<u>http://www.w3.org/TR/2010/ED-html5-author-20100809</u><br>
+	
+	<b>Latest version:</b><br>
+	<u>http://www.w3.org/TR/</u><br>
+	
+	<b>Previous version:</b><br>
+	<u>No previous versions.</u><br>
+	
+	<b>Editors:</b><br>
+	<u>Lachlan Hunt (Opera Software ASA) lachlan.hunt@lachy.id.au</u><br>
+	
+	<hr>
+	
+	<h3><font color = "005A9C" >Abstract</font></h3>
+	<p align = "center">This document explains the syntax, vocabulary and the available APIs for HTML5 documents, focussing on simplicity and practical applications for beginners while also providing in depth information for more advanced web developers.This document is complimentary to the HTML5 Guide.
+</body>
+</html>

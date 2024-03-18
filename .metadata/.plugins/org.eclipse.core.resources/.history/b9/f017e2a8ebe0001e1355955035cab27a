@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--  *************** 매우 중요 -->
+
+	<!-- 
+	
+		인라인 태그 vs 블럭 태그
+		- 모든 태그들은 위의 두 분류 중 하나에 속한다.
+		- 태그가 렌더링(출력)될때 나타나는 특징에 따른 분류
+		- 태그가 화면에 출력되는 모습에 따른 분류
+		
+		인라인 태그, Inline Tag
+		- 자신의 내용물을 인접한 다른 태그의 내용물과 같은 라인에 출력한다.
+		
+		블럭 태그, Block Tag
+		- 자신의 내용물을 인접한 다른 태그의 내용물과 다른 라인에 출력한다.
+		
+	
+	 -->
+	 
+	 <!-- 한줄에 같이 출력된다고 해서 인라인 태그 -->
+	 <font>인라인 태그</font>
+	 <font color = "blue">인라인 태그</font>
+	 <font>인라인태그</font>
+	 <hr>
+	 
+	 <!-- 엔터치는 효과 -->
+	 <p>블럭태그</p>
+	 <p style = "background-color : yellow;">블럭태그</p>
+	 <p>블럭태그</p>
+	 
+</body>
+</html>

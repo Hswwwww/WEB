@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		
+		<img>, Image
+		- 이미지를 출력하는 태그
+		- 단독태그
+		- 인라인 태그
+		
+		img.src
+		- source
+		- 이미지 경로 (URL)
+		img.alt
+		
+		
+	
+	
+	 -->
+	 
+	 <h1>강아지</h1>
+	 <img src = "images/dog01.jpg">
+	 
+	 
+	 
+	 
+</body>
+</html>

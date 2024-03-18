@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--
+	
+ 	<font> 태그
+ 	- 텍스트의 크기와 색상을 지정하는 태그
+ 	- 서식 태그(역할x, 데이터의 의미 저장x, 시각적 효과o) > CSS 대체 
+ 	
+ 	font.size
+ 	- 글꼴 크기
+ 	- 1~7
+ 	
+ 	font.color
+ 	- 전경색
+ 	
+ 	
+	  -->
+	  
+	  <font size = 1> 안녕하세요. 홍길동입니다.</font>
+	  <font> 안녕하세요. 홍길동입니다.</font>
+	  <font> 안녕하세요. 홍길동입니다.</font>
+	  <font> 안녕하세요. 홍길동입니다.</font>
+</body>
+</html>

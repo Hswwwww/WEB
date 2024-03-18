@@ -1,0 +1,191 @@
+1. JDK 11 설치
+	- 확인
+	- $ java.exe --version //JRE
+	- $ javac.exe --version //JDK
+	
+2. 환경 변수 수정
+	- JAVA_HOME > C:\class\dev\jdk-21
+			   > C:\class\dev\jdk-11
+	- Path > %JAVA_HOME%\bin
+
+3. 이클립스 EE 확인
+	- C:\class\dev\eclipse\eclipse.ini
+
+4. 크롬 설치 > 기본 브라우저 설정 확인
+	> 윈도우키 > "기본 앱"
+
+5. eclipse.ini 수정 > JDK 11 변경
+
+6. 워크 스페이스
+	- C:\class\code\client
+	- Window > Preferences > "encoding"
+		- Workspace > "UTF-8"
+		- CSS Files > "UTF-8"
+		- HTML Files > "UTF-8"
+		- JSP Files > "UTF-8"
+
+7. tomcat 설치
+	- http://apache.org
+	- http://tomcat.apache.org
+		- 64-bit Windows zip
+	- C:\class\dev\apache-tomcat-8.5.99
+
+8. 새 프로젝트
+	- File > New > Dynamic Web Project
+		> "ClientTest"
+
+
+
+client
+	- front-end
+	
+1. HTML
+2. CSS
+3. JavaScript
+
+
+Web ?
+- WWW > World Wide Web
+- http://www.naver.com
+
+NetWork
+- 2대 이상의 컴퓨터를 서로 연결해높은 환경
+- 통신 가능한 환경
+- 관리하는 주체가 있음
+
+Internet
+- inter-network
+- 전세계의 모든 컴퓨터를 서로 연결해놓은 환경
+
+Web
+- 인터넷 기반
+- 서로간의 정보(문서)를 주고 받은 환경
+
+우리의 목적
+- Web 기반의 서비스 구현
+
+Database 서비스 
+- 서버 : 오라클
+- 클라이언트 : SQL Developer
+
+Web 서비스 구성
+- 웹클라이언트 <-> 웹서버
+- 웹서버 : 문서를 제공함 > 아파치 톰캣
+- 웹클라이언트 : 문서를 요청 + 제공받음(소비) > 웹 브라우저(크롬)
+
+요청한 url 페이지 소스를 하드디스크에 다운로드 되는 것임. > 크롬이 이 소스를 출력하는 것.
+
+URI
+- Uniform Resource Identifier
+
+URL
+- Uniform Resource Locator
+- 웹에서 주어진 자원(웹문서, 이미지, 동영상, 파일 등)의 고유 주소
+
+http://www.naver.com:80/member/list.html?name=hong&age=10&gender=f - url
+
+1. http:
+	- 프로토콜(Protocol) > 통신규약
+	- 서로간의 데이터를 주고 받을 때 사용하는 규칙(약속)
+<무전기의 오버 > 말을 하기 위한 규칙
+	- Hyper Text(HTML) Transfer Protocol
+	- http:
+	- https: + 보안(security)
+
+2. www.naver.com
+	- Domain Address
+	- 도메인 주소
+	- 서버 컴퓨터(호스트)의 주소
+	- IP Address 사용
+
+3. IP
+	- 인터넷에서 호스트를 구분하는 고유 주소값(전세계에서 유일한 값)
+	- XXX.XXX.XXX.XXX > IPv4
+	- http://223.130.200.236 > 원래라면 네이버 접속할때 숫자로 접속.. 그래서 도메인 만듦
+
+4. DSN
+	- Domain Name System
+	- DNS Server
+	- http://naver.com > (변환) > http://223.130.200.236
+	  인터넷 잡을 때 봤던 창에 DNS 서버가 존재함.
+	  
+하나의 컴퓨터가 또 다른 컴퓨터를 찾을때 식별자로 IP 주소를 알면 상대방의 주소를 찾을 수 있다. > 하드웨이 적인 것 (PC 구분)
+하나의 컴퓨터에서  돌고 있는 프로그램이 다른 컴퓨터 안의 프로그램을 찾는 것 > 그러나 컴퓨터 안에 여러개의 프로그램이 돌고 있을 수 있다.
+> 프로그램 별로 식별자 기능인 
+외부와 내부를 연결하는 통로를 통해서만 데이터를 내보내거나 들여보낼 수 있다. > 포터
+port 65535개 정도 있을 겨 > 독점 > 두개 이상의 프로그램이 같은 포터를 사용하면 문제발생 확률 높음.
+ip 주소로 컴퓨터에 독착 후 30000번 포터를 쓰고 있는 프로그램을 찾는다.
+ip + port
+
+5. Port Number
+	- 네트워크를 사용하는 프로그램이 사용하는 통로
+	- 0 ~ 65535
+	- 독점
+	- ~ 1000 : 예약 포트 넘버
+	- http : > :80 번호(기본)
+	- https: > :443번호(기본)
+	
+6. IP:80
+	- 상대방의 컴퓨터 + 프로그램 = 식별자
+	- 종단점(EndPoint)
+
+7. /member
+	- 자원의 경로(폴더)
+
+8. /list.html
+	- 자원명(파일명)
+	
+9. ?name=hong&age=10&gender=f
+	- Query String
+	- name=hong
+		- name : Parameter
+		- hong : Value
+
+
+
+Java 개발 및 실행 환경
+- 1. 개발 : JDK
+소스를 해석해서 기계어로 해서 실행 환경 만듦
+- 2. 실행 : JRE
+
+HTML/CSS/JsvaScript 실행(개발) 환경
+- 1. 실행 : 브라우저 > 크롬
+클라이언트 하는데 있어서는 이클립스도 필요없는 존재
+
+
+
+src > main > webapp
+- 아파치 톰캣 구조
+- 루트 폴더 (최상위폴더) 라고 부름. 
+- 웹사이트를 구성하는 자원들의 최상위 폴더
+webapp > 외부에서 보면 localhost:8080
+HTML
+
+  프로그래밍 언어가 아니다 > 제어를 못함 > 변수 못 만듦 > 브라우저에게 표현 관련된 것 > 그래도 소스라고 부름. 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
