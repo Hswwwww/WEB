@@ -23,7 +23,7 @@
     display: block;
     clear: both;
 }
-
+/* clear는 블럭태그에만 가능해서 빈문자열을 블럭태그로 만들어줌 */
 #news .item img{
     width: 110px;
     height: 75px;
