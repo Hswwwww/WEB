@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+        
+        CSS 애니메이션
+        1. transition
+        2. animation
+  
+        */
+
+        body{
+            padding: 100px;
+        }
+
+        #box{
+            width: 200px;height: 200px;
+            background-color: gold;
+
+            /* transition:all 1s; */
+        }
+
+        body:hover #box{
+            /* width: 400px; */
+
+
+            animation-name: key1;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes key1 {
+
+            form{
+                width: 200px;
+
+            }
+            to{
+                width: 400px;
+            }
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box">상자</div>
+
+</body>
+</html>
