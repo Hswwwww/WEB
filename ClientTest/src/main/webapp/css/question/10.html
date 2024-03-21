@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock{
+            border: 30px dashed #999;
+            width: 700px;
+            height: 700px;
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+
+        #hour ,#min ,#sec{
+            border: 16px solid #555;
+            width: 50px;
+            position: absolute;
+            border-radius: 50px;
+        }
+
+        #hour>div,
+        #min>div,
+        #sec>div {
+            font-variant: small-caps;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #hour{
+
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <div id="hour" >
+            <div>Hour</div>
+        </div>
+        <div id="min">
+            <div>min</div>
+        </div>
+        <div id="sec">
+            <div>sec</div>
+        </div>
+    </div>    
+
+
+</body>
+</html>
+
