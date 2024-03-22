@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+       
+       
+        //문자열 함수
+        var txt = 'Hello~ Hong~';
+
+        //1. 문자열 길이
+        console.log(txt.length); //필드(field) > 프로퍼티(Property)
+
+        //2. 검색
+        //- indexOf()
+        //- lastIndexOf()
+        console.log(txt.indexOf('~'));
+        console.log(txt.indexOf('~', 6));
+        console.log(txt.lastIndexOf('~'));
+        console.log(txt.lastIndexOf('~', 10));
+        //3. 대소문자 변환
+        console.log(txt.toUpperCase());
+        console.log(txt.toLowerCase());
+
+        //4. 추출
+        console.log(txt.substring(2,4));
+        console.log(txt.substr(2,4));
+        console.log(txt.charAt(2)); // 문자 추출
+        console.log(txt.charCodeAt(2)) // 문자 코드값 추출
+
+
+
+        //5. 치환
+        //- 처음 만나는 요소만 치환(반복x)
+        //- 정규 표현식 + g(반복o)
+
+
+        txt = 'Hello~ Hong~ Bye~ Hong~ hong~';
+        console.log(txt.replace('Hong','Lee'));
+        console.log(txt.replace(/Hong/gi,'Lee')); // 정규표현식으로 적어야 함.
+        // g > 모든 i > 대소구분 x
+        txt = "제 나이는 20살입니다. 11 22 33";
+        console.log(txt.replace(/[0-9]{2}/g,'**'));
+
+        //6. 공백 제거
+        txt = '     하나     둘     셋    ';
+        console.log(txt.trim()); //trim
+        console.log(txt.trimLeft()); //ltrim
+        console.log(txt.trimRight());
+        console.log(txt.trimStart());
+        console.log(txt.trimEnd());
+
+        //7. 분할
+        txt = '홍길동,아무개.하하하,호호호,후후후';
+        console.log(txt.split(/[,.]/));
+
+
+        //8. 검색
+        txt = '홍길동';
+        console.log(txt.startsWith('홍')); //ture
+        console.log(txt.endsWith('동')); //ture
+
+        //9.
+        txt = '1';
+        console.log(txt.padStart(3,'0')); //001
+        console.log(txt.padEnd(3,'0')); //100
+        console.log(txt.padStart(3)); //  1
+        
+
+
+        console.log('홍길동'.repeat(3)); //홍길동홍길동홍길동
+
+        </script>
+
+
+</body>
+</html>
