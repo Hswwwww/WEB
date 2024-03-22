@@ -10,6 +10,7 @@
             display: block;
             margin-bottom: 10px;
         }
+
         textarea {
             width: 500px;
             height: 300px;
@@ -17,6 +18,8 @@
             resize: none;
             font-size: 2rem;
         }
+
+
     </style>
 </head>
 <body>
@@ -49,10 +52,15 @@
 
         */
         
-        txt1.onmouseover = m1;
-        txt1.onmouseout = m2;
-        txt1.onmousedown = m3;
-        txt1.onmouseup = m4;
+       // txt1.onmouseover = m1;
+        //txt1.onmouseout = m2;
+        //txt1.onmousedown = m3;
+       // txt1.onmouseup = m4;
+      // txt1.onmousemove= m5;
+      txt1.onmousewheel = m6;
+
+      //클릭 > 마우스 이벤트 아니다. > 마우스 관련 작업 금지(버튼, 좌표)
+        btn1.onclick = m7;
 
         function m1() {
             //alert();
@@ -66,11 +74,55 @@
         }
 
         function m3() {
-            message('mousedown');
+           // message('mousedown');
+
+           // 어떤 버튼? > 이벤트 함수내에서 사용 가능한 내장 객체 > event
+           //message(event.buttons);
+
+           if(event.buttons ==2){
+            alert('오른쪽 버튼 클릭 금지');
+           }
+
+            /* 
+            
+            마우스 커서 좌표
+            1. x,y
+                - 문서 좌측 상단을 기준
+                - 비표준(ms)
+            2. clientX, clientY *****************
+                - 문서 좌측 상단을 기준
+                - 표준 > 권장
+            3. screenX ,screenY
+                - 모니터 좌측 상단을 기준
+            4. offsetX. offsetY ********************
+                - 이벤트 객체의 좌측 상단을 기준
+
+
+            */
+             //message(event.x + "," + event.y);
+            //message(event.clientX + "," + event.clientY);
+           //message(event.screenX+ "," + event.screenY);
+           message(event.offsetX + "," + event.offsetY);
         }
 
         function m4() {
             message('mouseup');
+        }
+
+        function m5() {
+            //message('mousemove');
+            message(event.offsetX + ',' + event.offsetY);
+        }
+
+        function m6() {
+            message('mousewheel');
+
+        }
+
+        function m7() {
+            message('click');
+
+
         }
 
         function message(txt) {
