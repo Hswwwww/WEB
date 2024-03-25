@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ex17_screen.html -->
+
+    <script>
+        
+        //screnn 객체
+        // -window > screen
+        // - 화면 정보 제공
+
+        //현재 보고 있는 화면의 크기 > 모니터 해상도
+        console.log(window.screen.availWidth); //1920
+        console.log(window.screen.availHeight); //1032 1080-작업표시줄 > 우리가 쓸 수 있는 최대 영역
+
+        console.log(window.screen.colorDepth) //24bit color
+
+        //ScreenOrientation {angle: 0, type: 'landscape-primary', onchange: null}
+
+        console.log(window.screen.orientation);
+
+        
+      
+    </script>
+</body>
+</html>
