@@ -81,6 +81,34 @@
             <input type="button" name="btnYellow6" value="노랑" onclick="m10();" data-color="gold">
             <input type="button" name="btnBlue6" value="파랑" onclick="m10();" data-color="cornflowerblue">
         </div>
+
+        
+        <div class="item">
+            <input type="button" name="btnRed7" value="빨강" data-color="tomato">
+            <input type="button" name="btnYellow7" value="노랑" data-color="gold">
+            <input type="button" name="btnBlue7" value="파랑" data-color="cornflowerblue">
+        </div>
+
+        <div class="item">
+            <input type="button" name="btn8" value="빨강" data-color="tomato">
+            <input type="button" name="btn8" value="노랑" data-color="gold">
+            <input type="button" name="btn8" value="파랑" data-color="cornflowerblue">
+        </div>
+
+
+        
+        <div class="item">
+            <input type="button" name="btn8" value="빨강" data-color="tomato">
+            <input type="button" name="btn8" value="노랑" data-color="gold">
+            <input type="button" name="btn8" value="파랑" data-color="cornflowerblue">
+        </div>
+
+        <div>
+            <img src="images/cat01.jpg" name="cat">
+            <img src="images/cat02.jpg" name="cat">
+            <img src="images/cat03.jpg" name="cat">
+        </div>
+
     </form>
 
     <script>
@@ -146,6 +174,55 @@
 
             document.body.bgColor=event.target.dataset['color'];
         }
+
+        document.form1.btnRed7.onclick= m11;
+        document.form1.btnYellow7.onclick= m11;
+        document.form1.btnBlue7.onclick= m11;
+        
+        function m11(){
+            document.body.bgColor=event.target.dataset['color'];
+        }
+
+        //console.log(document.form1.btn8);
+
+        // ** 태그의 name이 동일하면 > 배열화
+        for(var i=0; i<document.form1.btn8.length; i++){
+            document.form1.btn8[i].onclick= m12;
+        }
+
+        function m12(){
+            document.body.bgColor=event.target.dataset['color'];
+        }
+
+        //console.log(document.images['cat']);
+        //console.log(document.all.cat.length);
+
+
+        for (var i=0; i<document.all.cat.length; i++) {
+
+        document.all.cat[i].onmouseover = m13;
+        document.all.cat[i].onmouseout = m13;
+
+        }
+
+        function m13() {
+
+        //다른 객체 > 하나의 이벤트 함수로 처리(매개변수 or this or event.srcElement, event.target)
+
+        //다른 이벤트 > 하나의 이벤트 함수로 처리
+
+        //console.log(event.type);
+        
+        var n = event.target.src.substr(event.target.src.length-5,1);
+        if (event.type == 'mouseover') {
+            event.target.src = 'images/dog0' + n +'.jpg';
+        } else if (event.type == 'mouseout') {
+            event.target.src = 'images/cat0' + n + '.jpg';
+        }
+
+        }
+
+        
 
 
 

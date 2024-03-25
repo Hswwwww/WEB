@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tm{
+            border:0px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입</h1>
+
+    <form name="form1">
+        아이디 : <input type="text" name ="txt1"><br>
+        <input type="text" name="textmessage" id = "tm">
+    </form>
+
+    <script>
+     var txt1= document.form1.txt1 ;
+     var tm = document.form1.textmessage;
+
+     txt1.onkeyup=m1;
+     function m1(){
+     if(txt1.value.length<4){
+        tm.value = '아이디가 너무 짧습니다.';
+     }else if (txt1.value.length>=4 && txt1.value.length<12){
+        tm.value="아이디가 적합합니다."
+     }else if(txt1.value.length>12){
+        tm.value='아이디가 너무 깁니다. ';
+        
+     }
+     }
+      
+    </script>
+</body>
+</html>
