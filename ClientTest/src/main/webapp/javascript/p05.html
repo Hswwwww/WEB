@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       form {
+        border : 1px solid gray;
+       }
+
+       form input[type=button]{
+            display: block;
+            margin-top: 10px;
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+    <form name ="form1">
+        <input type="button" value ="강아지1" name="btn1">
+        <input type="button" value ="강아지2" name="btn2">
+        <input type="button" value ="강아지3" name="btn3">
+        <input type="button" value ="강아지4" name="btn4">
+        <input type="button" value ="강아지5" name="btn5">
+        <img src="images/dog01.jpg" name ="dog">
+        <!-- <img src="images/dog01_big.jpg" alt=""> -->
+       
+    </form>
+
+    <script>
+        document.form1.btn1.onmouseover = m1;
+        document.form1.btn2.onmouseover = m2;
+        document.form1.btn3.onmouseover = m3;
+        document.form1.btn4.onmouseover = m4;
+        document.form1.btn5.onmouseover = m5;
+
+        document.form1.btn1.onclick = b1;
+        document.form1.btn2.onclick = b2;
+        document.form1.btn3.onclick = b3;
+        document.form1.btn4.onclick = b4;
+        document.form1.btn5.onclick = b5;
+
+        function m1(){
+            
+            document.form1.dog.src = 'images/dog01.jpg';
+            
+        }
+        function m2(){
+            
+            document.form1.dog.src = 'images/dog02.jpg';
+            
+        }
+
+        function m3(){
+            
+            document.form1.dog.src = 'images/dog03.jpg';
+            
+        }
+
+        function m4(){
+            
+            document.form1.dog.src = 'images/dog04.jpg';
+            
+        }
+        function m5(){
+            document.form1.dog.src = 'images/dog05.jpg';
+             }
+
+        function b1(){
+            var imageURl = "images/dog01_big.jpg";
+            window.open(imageURl);
+
+        }
+        function b2(){
+            var imageURl = "images/dog02_big.jpg";
+            window.open(imageURl);
+
+        }
+        function b3(){
+            var imageURl = "images/dog03_big.jpg";
+            window.open(imageURl);
+
+        }
+        function b4(){
+            var imageURl = "images/dog04_big.jpg";
+            window.open(imageURl);
+
+        }
+        function b5(){
+            var imageURl = "images/dog05_big.jpg";
+            window.open(imageURl);
+
+        }
+        
+
+       
+
+    
+    </script>
+</body>
+</html>

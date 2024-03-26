@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        
+            JavaScript Core
+
+            변수 선언하기
+
+            1. var
+                - BOM / DOM / ES6
+                - function-scope
+                - 제어문(영역 인식 불가능)
+                - 중복 선언 가능
+                - 상수 선언 불가능(final)
+
+            2. let
+                - ES6(ECMScript 2015)
+                - block-scope(함수, 제어문)
+                - 중복 선언 불가능
+                - 변수
+
+            3. const
+                - ES6(ECMScript 2015)
+                - block-scope(함수, 제어문)
+                - 중복 선언 불가능
+                - 상수(final 변수)
+
+        */
+
+        // var a = 10;
+        // var a = 20;
+        // console.log(a);
+
+        let a = 10;
+
+        function m1(){
+            let b = 20; // 지역변수(m1)
+        }
+
+        m1();
+        //console.log(b);
+
+        if(a>0){
+            let c = 30; //지역변수
+            var d = 40; //전역변수
+        }
+        // console.log(c); // 안됨
+        // console.log(d);
+
+        // 재정의 x
+        // let a = 50;
+
+        const PI = 3.314;
+
+        // PI = 5.28; // 안됨
+
+        var list = [10,20,30,40,50];
+
+        for(var i = 0; i<list.length; i++){
+
+        }
+
+        console.log(i);
+
+        // for(let j = 0; j<list.length; j++){
+
+        // }
+        // console.log(j); //안됨
+
+
+
+        
+    </script>
+
+</body>
+</html>
