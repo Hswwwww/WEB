@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        window.onmousedown= function(){
+
+            const img = document.createElement('img');
+
+            img.calssName = 'item';
+            img.setAttribute("src", "/../html/images/m01.png");
+
+            img.style.left = event.clientX  + 'px';
+            img.style.top = event.clientY + 'px';
+            
+            document.body.appendChild(img);
+
+
+
+        }
+    </script>
+</body>
+</html>
