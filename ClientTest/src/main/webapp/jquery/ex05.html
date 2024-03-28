@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{color:blue;}
+        .two{background-color: gold;}
+    </style>
+</head>
+<body>
+    <!--  -->
+    <h1>jQuey + CSS</h1>
+
+    <input type="button" value ="버튼1" id="btn1">
+
+    <div id="box1">상자</div>
+    
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $('#btn1').click(function(){
+
+            //일반
+            // - obj.setProperty('이름' , '값')
+            // - obj.getProperty('이름')
+
+            //jQuery
+            //- obj.prop('이름', '값')
+            //- ovj.prop('이름')
+
+            //CSS 조작
+            //1. CSS(속성, 값) > 쓰기
+            //2. CSS(속성) > 읽기
+
+            // box.style.color 
+            // alert(window.getComputedStyle(document.getElementById('box1')).getPropertyValue('color'));
+
+            // alert($('#box1').css('color'));
+
+            // $('#box1').css('color', 'blue');
+            // $('#box1').css('background-color', 'gold');
+            // // 객체를 반환해준다가 뭔소리지? > 앞선 메소드의 리턴값을 그대로 받아서 계속 함수 적용 가능
+            // $('#box1').css('font-size', '3rem');
+
+            // $('#box1').css('color', 'blue') 
+            //           .css('background-color', 'gold')
+            //           .css('font-size', '3rem');
+
+            // 객체로 주는 방법..(오브젝트) > 왜 객체?
+            
+            // $('#box1').css({
+            //     color:'blue',
+            //     backgroundColor:'gold',
+            //     'font-size' : '3rem'
+            // });  
+
+            //BOM
+            // box1.className = 'one';
+
+            //DOM
+            //box1.classList.add('one');
+            //box1.classList.remove('one');
+            //box1.classList.containe('one');
+
+            //jQuery
+            // $('#box1').addClass('one');
+            // $('#box1').addClass('two');
+            // $('#box1').removeClass('two');
+            $('#box1').toggleClass('two'); 
+
+        });
+
+
+
+    </script>
+</body>
+</html>
