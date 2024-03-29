@@ -31,3 +31,6 @@ $('<div id="scroll-bar-indicator"></div>')
         $('#scroll-bar-indicator').css('width', x + '%');
     
     });
+
+
+    
