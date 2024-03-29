@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tbl1{
+            border:1px solid black;
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        #tbl1 tr{
+            border:1px solid black;
+                
+        }
+
+       
+
+        #tbl1 td:first-child {
+            border:1px solid black;
+			width: 30%;
+			text-align: center;
+            padding: 10px
+		}
+
+    </style>
+</head>
+<body>
+    <h1>회원 가입</h1>
+
+    <table id = "tbl1" name="tbl1">
+        <tr>
+            <td>주민번호</td>
+            <td>
+                <input type="text" size =6 maxlength="6" name="jumin1" onkeyup="check(this);"> - <input type="text" size="7" maxlength="7" name="jumin2" onkeyup="check2(this);">
+            </td>
+        </tr>
+        <tr>
+            <td>생년월일</td>
+            <td>
+                <input type="text" size = 4 name="year">년 <input type="text" size =2 name="month">월 <input type="text" size =2 name="day">일
+            </td>
+        </tr>
+        <tr>
+            <td>성별</td>
+            <td><input type="radio" name="gender" /> 남자 <input type="radio" name="gender" /> 여자</td>
+        </tr>
+    </table>
+    <script>
+        
+        function check(jumin1){
+            var year = document.all.year;
+            var month = document.all.month;
+            var day = document.all.day;
+            var jumin2 = document.all.jumin2;
+            
+            if(jumin1.value.length == 6){
+                year.value= "19"+ jumin1.value.substring(0,2);
+                month.value = jumin1.value.substring(2,4);
+                day.value = jumin1.value.substring(4,6);
+            }
+
+            
+
+        }
+
+
+        function check2(jumin2){
+            var gender = document.all.gender;
+            
+            if(jumin2.value.length==1){
+                if(jumin2.value%2==1){
+                    gender[0].checked=true;
+                }else gender[1].checked=true;
+            }
+            
+        }
+
+
+    </script>
+</body>
+</html>

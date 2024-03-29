@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tbl1{
+            /* border:1px solid black; */
+            border-collapse: collapse;
+            width: 600px;
+            
+        }
+
+        #tbl1 th {
+            font-weight: bold;
+            padding: 7px;
+        }
+
+        #tbl1 td{
+            text-align: center;
+        }
+
+    
+
+        .txt{
+            width: 350px;
+            padding: 3px;
+        
+        }
+
+
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <h1>입력하기</h1>
+
+    <table id = "tbl1">
+        <tr>
+            <th>번호</th>
+            <th>입력</th>
+            <th>잠금</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><input type="text" class ="txt" name="txt1"></td>
+            <td><input type="checkbox" name="rock" ></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="text" class ="txt" name="txt2"></td>
+            <td><input type="checkbox" name="cb1" id="cb1" onclick="rock();" ></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><input type="text" class ="txt" name="txt3"></td>
+            <td><input type="checkbox" name="rock" ></td>
+        </tr>
+       
+    </table>
+
+    <script>
+        function rock(){
+            var cb1 = document.all.cb1;
+            var txt2 = document.all.txt2;
+            if(cb1.checked){
+                t
+                
+            }
+        }
+    </script>
+</body>
+</html>
